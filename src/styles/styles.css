@@ -14,7 +14,7 @@
 /* Removing screen sliding */
 html, body {
   overflow-x: hidden;
-  overflow-y: hidden; 
+  overflow-y: scroll; 
     background-color: #101010;
 }
 
@@ -184,6 +184,9 @@ button {
 
 
 /* ====================================== SONG SCREEN ====================================== */
+
+/* Song Hud */
+
 .songContainer {
     width: 80%;
     display: flex;
@@ -199,6 +202,7 @@ button {
         width: 100%;
         margin-top: 160px;
         margin-bottom: 54px;
+        border-radius: 5px;
     }
 }
 
@@ -209,6 +213,85 @@ button {
 
 .songTitle, .songArtist {
     color: white;
+}
+
+.songTitle {
+  font-family: GothamBold;
+  font-size: 18px;
+}
+
+.songArtist {
+  margin-top: 4px;
+  font-family: Gotham;
+  font-size: 16px;
+  color: gray;
+}
+
+.songButtons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+ .playButton  {
+  width: 10%;
+  padding: 15px 0;
+  color: #000;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.prevButton,.nextButton {
+  color: white;
+}
+
+.songTimeline {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 14px 0;
+  
+}
+
+.progressBar {
+  width: 80%;
+  accent-color: white;
+}
+
+.progressBar::-webkit-slider-runnable-track {
+  height: 4px;
+}
+
+.progressBar.progressBar::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  margin-top: -5px;
+}
+
+/* Text box */
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  background: green;
+  border-radius: 5px;
+  padding: 16px 14px;
+  margin-top: 48px;
+}
+
+.msgTitle {
+  color: white;
+  font-family: GothamBold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.mainMsg {
+  margin-bottom: 20px;
+  color: white;
+  font-family: GothamBold;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 /* ====================================== SONG SCREEN ====================================== */
