@@ -234,12 +234,13 @@ button {
   gap: 18px;
 }
 
-.fa-circle-play, .fa-backward, .fa-forward {
-  color: white;
+.fa-backward, .fa-forward {
+color: rgba(255, 255, 255, 0.274);
 }
 
 .fa-circle-play {
   font-size: 38px;
+  color: white;
 }
 
 .fa-backward, .fa-forward {

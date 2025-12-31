@@ -24,8 +24,10 @@ playSong();
 playButton.addEventListener("click", function() {
     if (!audio.paused) {
         audio.pause();
+        playButton.classList.remove("fa-circle-pause")
     } else {
         audio.play();
+        playButton.classList.add("fa-circle-pause")
     }
 });
 
@@ -35,4 +37,20 @@ songImage.src = songIndex.image;
 songName.innerText = songIndex.name;
 songArtist.innerText = songIndex.artist;
 audio.src = songIndex.audio;
+
+audio.onloadedmetadata = function() {
+    songBar.value = 0;
+    songBar.max = audio.duration;
+}
+
+function moveBar() {
+    songBar.value = audio.currentTime;
+
+}
+
+songBar.addEventListener("input", () => {
+    audio.currentTime = songBar.value;
+});
+
+setInterval(moveBar, 1000);
 }
