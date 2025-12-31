@@ -230,19 +230,20 @@ button {
 .songButtons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
 }
 
- .playButton  {
-  width: 10%;
-  padding: 15px 0;
-  color: #000;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
+.fa-circle-play, .fa-backward, .fa-forward {
+  color: white;
 }
 
-.prevButton,.nextButton {
-  color: white;
+.fa-circle-play {
+  font-size: 38px;
+}
+
+.fa-backward, .fa-forward {
+  font-size: 22px;
 }
 
 .songTimeline {
@@ -253,18 +254,22 @@ button {
 }
 
 .progressBar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   width: 80%;
-  accent-color: white;
+  height: 3px;
+  border-radius: 50px;
 }
 
-.progressBar::-webkit-slider-runnable-track {
-  height: 4px;
-}
-
-.progressBar.progressBar::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
-  margin-top: -5px;
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #1cd35d;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 /* Text box */

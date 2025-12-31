@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -15,22 +16,22 @@
     <div class="songContainer">
            <div class="songSection">
              <div class="songAlbum">
-        <img src="https://placehold.co/450x400" alt="">
+        <img id="song-image" src="https://placehold.co/450x400" alt="">
     </div>
 
     <div class="songHud">
-        <span class="songTitle">Loverboy</span>
-        <span class="songArtist">A-Wall</span>
+        <span id="song-title" class="songTitle"></span>
+        <span id="song-artist" class="songArtist"></span>
     </div>
 
         <div class="songTimeline">
-<input type="range" class="progressBar" min="0" max="100" value="0">
+<input type="range" class="progressBar" id="progress-bar" min="0" max="100" value="0">
     </div>
 
     <div class="songButtons">
-        <button class="prevButton"><</button>
-        <button class="playButton">D</button>
-        <button class="nextButton">></button>
+    <i class="fa-solid fa-backward"></i>
+    <i id="pause-song" class="fa-solid fa-circle-play"></i>
+    <i class="fa-solid fa-forward"></i>
     </div>
            </div>
 
@@ -48,6 +49,6 @@
            </div>
     </div>
 
-    
+<script src="../scripts/musicplayer.js"></script>
 </body>
 </html>
