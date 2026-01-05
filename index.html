@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>Spotify</title>
     <link rel="manifest" href="/manifest.json">
-    <link rel="shortcut icon" href="assets/images/spotify-icon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/spotify-icon-512.png" type="image/png">
     <meta name="theme-color" content="#000000">
 
 
@@ -37,7 +37,17 @@
         </div>
     </div>
     
-    <script src="scripts/serviceworkervalidation.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js')
+      .then(function(registration) {
+        console.log('Service Worker registrado com sucesso:', registration);
+      })
+      .catch(function(error) {
+        console.log('Falha ao registrar o Service Worker:', error);
+      });
+  }
+</script>
     <script src="scripts/passwordreveal.js"></script>
 </body>
 </html>
