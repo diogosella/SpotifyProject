@@ -1,7 +1,7 @@
 {
   "name": "Spotify - Modo Aniversariante",
   "short_name": "Spotify Aniversariante",
-  "start_url": "src/app/index.html",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
