@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=no">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Spotify</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="assets/images/spotify-icon.png" type="image/png">
+    <meta name="theme-color" content="#000000">
+
+
+</head>
+<body>
+    <div id="rotate-warning">
+    <p>Deixe o celular de pé!</p>
+    </div>
+
+    <div class="container">
+        <div class="firstButton">
+            <img src="assets/images/spotify-logo.png">
+            <span>Bem vinda ao Spotify!</span>
+            
+            <div class="inputs">
+
+            <div class="filledInput">
+                <span>Meu amorzinho</span>
+            </div>
+
+            <div class="filledInput">
+                <span id="password">euteamomuito1201</span>
+                <button id="visible-password"><img src="assets/images/sight.png"></button>
+            </div>
+            
+            </div>
+            <a class="mainButton" href="song.html">Entrar</a>
+        </div>
+    </div>
+    
+    <script src="scripts/serviceworkervalidation.js"></script>
+    <script src="scripts/passwordreveal.js"></script>
+</body>
+</html>
