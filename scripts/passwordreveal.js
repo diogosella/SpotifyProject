@@ -9,15 +9,14 @@ for (let i = 0; i < userPassword.length; i++) {
     secretPassword += "*";
 }
 password.textContent = secretPassword;
-
 passwordButton.addEventListener('click', function() {
 
-    if (passwordHidden === true) {
+    if (passwordHidden === false) {
         password.textContent = secretPassword;
-        passwordHidden = false;
+        passwordHidden = true;
         
     } else {
+        passwordHidden = false;
         password.textContent = userPassword;
-        passwordHidden = true;
     }
 })

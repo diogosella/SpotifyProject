@@ -394,9 +394,23 @@ color: rgba(255, 255, 255, 0.274);
   margin-bottom: 0;
 }
 
+.previewButton:active {
+  transition: all ease 0.1s;
+  background-color: #ffffff;
+  color: rgb(46, 124, 175);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#hide-button {
+  transition: all ease 0.2s;
+  background-color: #ffffff;
+  color: rgb(46, 124, 175); 
+}
+
 /* About Artist */
 
 .herPicture {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 14px;
@@ -408,9 +422,12 @@ color: rgba(255, 255, 255, 0.274);
   margin-left: 14px;
   font-family: GothamBold;
   color: white;
+  text-shadow: 1px 1px 12px #000000;
 }
 
 .pictureImg {
+  height: 240px;
+  object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -447,20 +464,21 @@ color: rgba(255, 255, 255, 0.274);
   color: grey;
 }
 
+/* Explore Grid */
+
 .exploreSection {
   width: 100%;
   margin-top: 14px;
   background-color: #1a1a1a;
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .meetTitle {
   display: flex;
-  padding: 12px;
+  padding: 12px 12px 0 12px;
   color: white;
   font-family: GothamBold;
   font-size: 16px;
-  margin-bottom: 4px;
 }
 
 .exploreGrid {
@@ -484,21 +502,22 @@ color: rgba(255, 255, 255, 0.274);
 
 .img1 img {
   width: 80%;
-  height: 95%;
+  height: 80%;
   object-fit: cover;
   display: block;
 }
 
 .img1 span {
   position: absolute;
-  bottom: 16px;
-  left: 0;
+  left: 1;
+  bottom: 12%;
   width: 70%;
   padding: 8px 12px;
   text-align: left;
-  font-size: 10px;
+  font-size: 13px;
   color: white;
   font-family: GothamBold;
+  text-shadow: 1px 1px 18px #000000;
 }
 
 .fullImage {
@@ -539,16 +558,36 @@ color: rgba(255, 255, 255, 0.274);
 
 }
 
-.previewButton:active {
-  transition: all ease 0.1s;
-  background-color: #ffffff;
-  color: rgb(46, 124, 175);
-  -webkit-tap-highlight-color: transparent;
+#image-description {
+  flex-direction: column;
 }
 
-#hide-button {
-  transition: all ease 0.2s;
-  background-color: #ffffff;
-  color: rgb(46, 124, 175); 
+/* Download Section */
+
+.downloadSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12px;
+  background-color:#1a1a1a;
+  border-radius: 5px;
+}
+
+.downloadSection span {
+  margin-top: 18px;
+  color: white;
+  font-size: 24px;
+  font-family: GothamBold;
+}
+
+.downloadSection a {
+  margin: 12px 0px 18px 0px ;
+  padding: 4px 12px;
+  font-size: 18px;
+  color: #1a1a1a;
+  background: white;
+  border: 1px solid white;
+  font-family: GothamBold;
 }
 /* ====================================== SONG SCREEN ====================================== */
