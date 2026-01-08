@@ -481,22 +481,24 @@ color: rgba(255, 255, 255, 0.274);
 
 .pictureName {
   font-family: GothamBold;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 4px;
   align-items: center;
 }
 
 .pictureName img {
-  width: 4%;
+  width: 16px;
 }
 
 .pictureListeners {
   color: gray;
   margin-bottom: 14px;
+  font-size: 12px;
 }
 
 .pictureDescription {
   color: grey;
+    font-size: 12px;
 }
 
 /* Explore Grid */
@@ -568,12 +570,12 @@ color: rgba(255, 255, 255, 0.274);
 }
 
 .fullImage img {
-  width: 350px;
+  width: 280px;
   border-radius: 10px;
 }
 
 .fullImageTitle {
-  width: 350px;
+  width: 280px;
   margin-top: 8px;
   color: white;
   text-align: left;
@@ -583,7 +585,7 @@ color: rgba(255, 255, 255, 0.274);
 }
 
 .fullImageDesc {
-  width: 350px;
+  width: 280px;
   text-align: left;
   color: white;
   font-family: Gotham;
