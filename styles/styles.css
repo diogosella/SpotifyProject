@@ -227,11 +227,40 @@ button {
     margin: 0 auto;
 }
 
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.527);
+  font-family: Gotham;
+  font-size: 12px;
+  gap: 15%;
+  margin-top: 48px;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-angle-down, .fa-ellipsis-vertical {
+  font-size: 14px;
+}
+
+
+.headerAlbum {
+  color: rgb(255, 255, 255);
+  font-family: GothamBold;
+  font-size: 10px;
+  margin-top:  4px;
+}
+
 .songAlbum {
     width: 100%;
     display: flex;
     animation: albumIntro 1.5s ease forwards;
-    margin-top: 10%;
 }
 
   .songAlbum img {
@@ -240,7 +269,7 @@ button {
       justify-content: center;
       display: flex;
       margin: 0 auto;
-      margin-top: 90px;
+      margin-top: 82px;
       margin-bottom: 24px;
       border-radius: 5px;
   }
@@ -258,13 +287,13 @@ button {
 
 .songTitle {
   font-family: GothamBold;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .songArtist {
   margin-top: 4px;
   font-family: Gotham;
-  font-size: 16px;
+  font-size: 14px;
   color: gray;
 }
 
@@ -272,7 +301,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 28px;
 }
 
 .fa-backward-step, .fa-forward-step, .fa-shuffle, .fa-repeat {
@@ -280,17 +308,18 @@ color: rgba(255, 255, 255, 0.274);
 }
 
 .fa-circle-play {
-  font-size: 60px;
+  font-size: 48px;
   color: white;
 }
 
 .fa-backward-step, .fa-forward-step {
-  font-size: 24px;
+  font-size: 20px;
+  margin: 0 28px 0 28px;
 }
 
 .fa-shuffle, .fa-repeat {
-  font-size: 22px;
-  margin: 0 42px 0 42px;
+  font-size: 16px;
+  margin: 0 26px 0 26px;
 }
 
 .songTimeline {
