@@ -254,11 +254,15 @@ button {
   color: rgb(255, 255, 255);
   font-family: GothamBold;
   font-size: 12px;
+  margin-top: 4px;
 }
 
 .songAlbum {
-    width: 100%;
+    width: 90%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     animation: albumIntro 1.5s ease forwards;
 }
 
@@ -366,7 +370,7 @@ color: rgba(255, 255, 255, 0.274);
 /* Text box */
 
 .textSection, .textSectionPreview {
-  width: 94%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   background: rgb(46, 124, 175);
@@ -386,7 +390,7 @@ color: rgba(255, 255, 255, 0.274);
 .msgTitle, .previewMsgTitle {
   color: white;
   font-family: GothamBold;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 20px;
 }
 
@@ -395,8 +399,8 @@ color: rgba(255, 255, 255, 0.274);
   margin-bottom: 20px;
   color: white;
   font-family: GothamBold;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .previewMainMsg {
