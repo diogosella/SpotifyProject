@@ -277,7 +277,7 @@ button {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .songTitle, .songArtist {
