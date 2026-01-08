@@ -234,7 +234,7 @@ button {
   justify-content: center;
   color: rgba(255, 255, 255, 0.527);
   font-family: Gotham;
-  font-size: 12px;
+  font-size: 22px;
   gap: 15%;
   margin-top: 32px;
 }
@@ -246,7 +246,7 @@ button {
 }
 
 .fa-angle-down, .fa-ellipsis-vertical {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 
@@ -308,17 +308,17 @@ color: rgba(255, 255, 255, 0.274);
 }
 
 .fa-circle-play {
-  font-size: 48px;
+  font-size: 56px;
   color: white;
 }
 
 .fa-backward-step, .fa-forward-step {
-  font-size: 20px;
+  font-size: 26px;
   margin: 0 28px 0 28px;
 }
 
 .fa-shuffle, .fa-repeat {
-  font-size: 16px;
+  font-size: 22px;
   margin: 0 26px 0 26px;
 }
 
