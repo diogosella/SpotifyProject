@@ -254,7 +254,6 @@ button {
   color: rgb(255, 255, 255);
   font-family: GothamBold;
   font-size: 12px;
-  margin-top: 4px;
 }
 
 .songAlbum {
@@ -269,7 +268,7 @@ button {
       justify-content: center;
       display: flex;
       margin: 0 auto;
-      margin-top: 82px;
+      margin-top: 78px;
       margin-bottom: 24px;
       border-radius: 5px;
   }
