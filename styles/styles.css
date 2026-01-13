@@ -220,7 +220,7 @@ button {
 }
 
 .songContainer {
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +258,7 @@ button {
 }
 
 .songAlbum {
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
