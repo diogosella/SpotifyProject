@@ -220,7 +220,7 @@ button {
 }
 
 .songContainer {
-    width: 80%;
+    width: 88%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,7 +258,6 @@ button {
 }
 
 .songAlbum {
-    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +266,7 @@ button {
 }
 
   .songAlbum img {
-      width: 90%;
+      width: 80%;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -280,7 +279,7 @@ button {
 .songHud {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 8%;
     margin-top: 10%;
 }
 
@@ -326,11 +325,12 @@ color: rgba(255, 255, 255, 0.274);
 }
 
 .songTimeline {
+  width: 92%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 24px 0 14px 0;
+  margin: 24px auto 14px;
 }
 
 .songTimer {
